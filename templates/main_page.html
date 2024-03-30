@@ -1,0 +1,670 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+        <meta name="description" content="" />
+        <meta name="author" content="" />
+        <title>차량 조회 시스템</title>
+        <!-- Favicon-->
+        <link rel="icon" type="image/x-icon" href="../assets/favicon.ico" />
+        <!-- Font Awesome icons (free version)-->
+        <script src="https://use.fontawesome.com/releases/v6.3.0/js/all.js" crossorigin="anonymous"></script>
+        <!-- Google fonts-->
+        <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet" type="text/css" />
+        <link href="https://fonts.googleapis.com/css?family=Roboto+Slab:400,100,300,700" rel="stylesheet" type="text/css" />
+        <!-- Core theme CSS (includes Bootstrap)-->
+        <link href="/css/styles.css" rel="stylesheet" />
+        <style>
+            table, th, td {
+                border: 2px solid black;
+                border-collapse: collapse;
+            }
+            table {
+                width: 600px;
+            }
+            table.center {
+                margin-left: auto;
+                margin-right: auto;
+            }
+        </style>
+    </head>
+    <body id="page-top">
+
+        <header class="masthead">
+            <div class="container">
+                <div class="masthead-subheading">번호판 사진을 제출하세요</div>
+                <div class="masthead-heading text-uppercase">차량 조회 시스템</div>
+                <form action="/upload" method="post" enctype="multipart/form-data">
+                    <input type="file" name="file" accept="image/*" required>
+                    <br><br>
+                    <button type="submit" class="btn btn-primary btn-xl text-uppercase">사진 제출하기</button>
+                </form>
+            </div>
+        </header>
+
+
+        <section class="page-section bg-light" id="team">
+            <div class="container">
+                <div class="text-center">
+                    <h2 class="section-heading text-uppercase">주차 정보 조회</h2>
+                    <h3 class="section-subheading text-muted"></h3>
+                </div>
+                <table class="center">
+                    <tr>
+                        <td>차량번호</td>
+                        <td>아파트동</td>
+                        <td>아파트호</td>
+                        <td>소유주</td>
+                    </tr>
+                    <tr>
+                        <td>47가 3108</td>
+                        <td>105</td>
+                        <td>1705</td>
+                        <td>고윤정</td>
+                    </tr>
+                    <tr>
+                        <td>941다 5665</td>
+                        <td>104</td>
+                        <td>1573</td>
+                        <td>이민호</td>
+                    </tr>
+                    <tr>
+                        <td>44라 4015</td>
+                        <td>104</td>
+                        <td>1914</td>
+                        <td>송중기</td>
+                    </tr>
+                    <tr>
+                        <td>15나 6130</td>
+                        <td>104</td>
+                        <td>1670</td>
+                        <td>전지현</td>
+                    </tr>
+                    <tr>
+                        <td>832사 6337</td>
+                        <td>105</td>
+                        <td>1752</td>
+                        <td>박보검</td>
+                    </tr>
+                    <tr>
+                        <td>744타 3592</td>
+                        <td>105</td>
+                        <td>1476</td>
+                        <td>송혜교</td>
+                    </tr>
+                    <tr>
+                        <td>848가 3823</td>
+                        <td>102</td>
+                        <td>1714</td>
+                        <td>이병헌</td>
+                    </tr>
+                    <tr>
+                        <td>92라 8003</td>
+                        <td>102</td>
+                        <td>1230</td>
+                        <td>김수현</td>
+                    </tr>
+                    <tr>
+                        <td>10가 8073</td>
+                        <td>101</td>
+                        <td>1643</td>
+                        <td>박신혜</td>
+                    </tr>
+                    <tr>
+                        <td>935하 8479</td>
+                        <td>104</td>
+                        <td>1633</td>
+                        <td>송승헌</td>
+                    </tr>
+                    <tr>
+                        <td>671하 3760</td>
+                        <td>103</td>
+                        <td>1406</td>
+                        <td>박서준</td>
+                    </tr>
+                    <tr>
+                        <td>885사 2942</td>
+                        <td>105</td>
+                        <td>1309</td>
+                        <td>김유정</td>
+                    </tr>
+                    <tr>
+                        <td>46바 4514</td>
+                        <td>105</td>
+                        <td>1043</td>
+                        <td>이종석</td>
+                    </tr>
+                    <tr>
+                        <td>33차 3800</td>
+                        <td>102</td>
+                        <td>1225</td>
+                        <td>박민영</td>
+                    </tr>
+                    <tr>
+                        <td>742나 7512</td>
+                        <td>103</td>
+                        <td>1754</td>
+                        <td>공유</td>
+                    </tr>
+                    <tr>
+                        <td>82가 4358</td>
+                        <td>104</td>
+                        <td>1803</td>
+                        <td>수지</td>
+                    </tr>
+                    <tr>
+                        <td>959카 5394</td>
+                        <td>103</td>
+                        <td>1034</td>
+                        <td>이준기</td>
+                    </tr>
+                    <tr>
+                        <td>99사 2739</td>
+                        <td>104</td>
+                        <td>1864</td>
+                        <td>아이유</td>
+                    </tr>
+                    <tr>
+                        <td>18다 4115</td>
+                        <td>105</td>
+                        <td>1513</td>
+                        <td>정우성</td>
+                    </tr>
+                    <tr>
+                        <td>66타 8016</td>
+                        <td>104</td>
+                        <td>1703</td>
+                        <td>한효주</td>
+                    </tr>
+                    <tr>
+                        <td>776차 3387</td>
+                        <td>102</td>
+                        <td>1481</td>
+                        <td>김우빈</td>
+                    </tr>
+                    <tr>
+                        <td>17하 6567</td>
+                        <td>104</td>
+                        <td>1673</td>
+                        <td>박신양</td>
+                    </tr>
+                    <tr>
+                        <td>451하 7651</td>
+                        <td>101</td>
+                        <td>1739</td>
+                        <td>김희선</td>
+                    </tr>
+                    <tr>
+                        <td>956가 1928</td>
+                        <td>105</td>
+                        <td>1076</td>
+                        <td>조인성</td>
+                    </tr>
+                    <tr>
+                        <td>18자 6121</td>
+                        <td>101</td>
+                        <td>1807</td>
+                        <td>김혜수</td>
+                    </tr>
+                    <tr>
+                        <td>488자 6576</td>
+                        <td>103</td>
+                        <td>1681</td>
+                        <td>하정우</td>
+                    </tr>
+                    <tr>
+                        <td>897카 9359</td>
+                        <td>105</td>
+                        <td>1391</td>
+                        <td>김고은</td>
+                    </tr>
+                    <tr>
+                        <td>55가 2117</td>
+                        <td>103</td>
+                        <td>1009</td>
+                        <td>강동원</td>
+                    </tr>
+                    <tr>
+                        <td>63차 5682</td>
+                        <td>101</td>
+                        <td>1512</td>
+                        <td>손예진</td>
+                    </tr>
+                    <tr>
+                        <td>97타 2308</td>
+                        <td>103</td>
+                        <td>1164</td>
+                        <td>유아인</td>
+                    </tr>
+                    <tr>
+                        <td>37바 9141</td>
+                        <td>103</td>
+                        <td>1264</td>
+                        <td>신민아</td>
+                    </tr>
+                    <tr>
+                        <td>17차 9609</td>
+                        <td>104</td>
+                        <td>1810</td>
+                        <td>송강호</td>
+                    </tr>
+                    <tr>
+                        <td>921타 8310</td>
+                        <td>103</td>
+                        <td>1531</td>
+                        <td>김희애</td>
+                    </tr>
+                    <tr>
+                        <td>867마 4256</td>
+                        <td>102</td>
+                        <td>1485</td>
+                        <td>이정재</td>
+                    </tr>
+                    <tr>
+                        <td>175차 7902</td>
+                        <td>105</td>
+                        <td>1901</td>
+                        <td>전혜빈</td>
+                    </tr>
+                    <tr>
+                        <td>15아 4579</td>
+                        <td>105</td>
+                        <td>1075</td>
+                        <td>최민식</td>
+                    </tr>
+                    <tr>
+                        <td>93가 5270</td>
+                        <td>102</td>
+                        <td>1295</td>
+                        <td>김남주</td>
+                    </tr>
+                    <tr>
+                        <td>48파 6692</td>
+                        <td>104</td>
+                        <td>1047</td>
+                        <td>이성민</td>
+                    </tr>
+                    <tr>
+                        <td>72바 9321</td>
+                        <td>101</td>
+                        <td>1458</td>
+                        <td>김사랑</td>
+                    </tr>
+                    <tr>
+                        <td>67다 6714</td>
+                        <td>102</td>
+                        <td>1911</td>
+                        <td>유해진</td>
+                    </tr>
+                    <tr>
+                        <td>50다 8001</td>
+                        <td>101</td>
+                        <td>1253</td>
+                        <td>김하늘</td>
+                    </tr>
+                    <tr>
+                        <td>62가 2508</td>
+                        <td>104</td>
+                        <td>1608</td>
+                        <td>정해인</td>
+                    </tr>
+                    <tr>
+                        <td>414다 4501</td>
+                        <td>105</td>
+                        <td>1489</td>
+                        <td>김지원</td>
+                    </tr>
+                    <tr>
+                        <td>16하 4950</td>
+                        <td>103</td>
+                        <td>1458</td>
+                        <td>이진욱</td>
+                    </tr>
+                    <tr>
+                        <td>296다 9277</td>
+                        <td>102</td>
+                        <td>1193</td>
+                        <td>김선아</td>
+                    </tr>
+                    <tr>
+                        <td>956차 1496</td>
+                        <td>104</td>
+                        <td>1118</td>
+                        <td>장동건</td>
+                    </tr>
+                    <tr>
+                        <td>83아 5401</td>
+                        <td>102</td>
+                        <td>1248</td>
+                        <td>김소연</td>
+                    </tr>
+                    <tr>
+                        <td>236타 4613</td>
+                        <td>104</td>
+                        <td>1148</td>
+                        <td>김래원</td>
+                    </tr>
+                    <tr>
+                        <td>904가 6641</td>
+                        <td>104</td>
+                        <td>1398</td>
+                        <td>박보영</td>
+                    </tr>
+                    <tr>
+                        <td>632라 3194</td>
+                        <td>105</td>
+                        <td>1430</td>
+                        <td>정우</td>
+                    </tr>
+                    <tr>
+                        <td>552라 7835</td>
+                        <td>101</td>
+                        <td>1708</td>
+                        <td>김태리</td>
+                    </tr>
+                    <tr>
+                        <td>35마 5701</td>
+                        <td>101</td>
+                        <td>1629</td>
+                        <td>조정석</td>
+                    </tr>
+                    <tr>
+                        <td>562아 9922</td>
+                        <td>104</td>
+                        <td>1058</td>
+                        <td>문채원</td>
+                    </tr>
+                    <tr>
+                        <td>453하 1317</td>
+                        <td>103</td>
+                        <td>1726</td>
+                        <td>이서진</td>
+                    </tr>
+                    <tr>
+                        <td>515다 3138</td>
+                        <td>104</td>
+                        <td>1034</td>
+                        <td>김민희</td>
+                    </tr>
+                    <tr>
+                        <td>720파 4776</td>
+                        <td>103</td>
+                        <td>1068</td>
+                        <td>김명민</td>
+                    </tr>
+                    <tr>
+                        <td>33바 9608</td>
+                        <td>104</td>
+                        <td>1553</td>
+                        <td>김희정</td>
+                    </tr>
+                    <tr>
+                        <td>342차 4337</td>
+                        <td>104</td>
+                        <td>1165</td>
+                        <td>김윤석</td>
+                    </tr>
+                    <tr>
+                        <td>955자 7742</td>
+                        <td>105</td>
+                        <td>1005</td>
+                        <td>김현주</td>
+                    </tr>
+                    <tr>
+                        <td>609타 7883</td>
+                        <td>104</td>
+                        <td>1441</td>
+                        <td>곽도원</td>
+                    </tr>
+                    <tr>
+                        <td>91아 5865</td>
+                        <td>102</td>
+                        <td>1917</td>
+                        <td>김지석</td>
+                    </tr>
+                    <tr>
+                        <td>24카 4966</td>
+                        <td>102</td>
+                        <td>1640</td>
+                        <td>이정현</td>
+                    </tr>
+                    <tr>
+                        <td>936카 9759</td>
+                        <td>102</td>
+                        <td>1604</td>
+                        <td>김남길</td>
+                    </tr>
+                    <tr>
+                        <td>983하 8875</td>
+                        <td>104</td>
+                        <td>1395</td>
+                        <td>김민정</td>
+                    </tr>
+                    <tr>
+                        <td>56가 2973</td>
+                        <td>103</td>
+                        <td>1140</td>
+                        <td>김상중</td>
+                    </tr>
+                    <tr>
+                        <td>531차 7233</td>
+                        <td>103</td>
+                        <td>1029</td>
+                        <td>아이린</td>
+                    </tr>
+                    <tr>
+                        <td>183가 1737</td>
+                        <td>105</td>
+                        <td>1101</td>
+                        <td>지수</td>
+                    </tr>
+                    <tr>
+                        <td>596다 3930</td>
+                        <td>104</td>
+                        <td>1658</td>
+                        <td>나연</td>
+                    </tr>
+                    <tr>
+                        <td>19마 4344</td>
+                        <td>103</td>
+                        <td>1855</td>
+                        <td>화사</td>
+                    </tr>
+                    <tr>
+                        <td>90카 3287</td>
+                        <td>101</td>
+                        <td>1693</td>
+                        <td>소원</td>
+                    </tr>
+                    <tr>
+                        <td>428라 4877</td>
+                        <td>101</td>
+                        <td>1381</td>
+                        <td>슬기</td>
+                    </tr>
+                    <tr>
+                        <td>70마 6080</td>
+                        <td>103</td>
+                        <td>1197</td>
+                        <td>로제</td>
+                    </tr>
+                    <tr>
+                        <td>164마 1640</td>
+                        <td>104</td>
+                        <td>1698</td>
+                        <td>쯔위</td>
+                    </tr>
+                    <tr>
+                        <td>31사 6763</td>
+                        <td>101</td>
+                        <td>1295</td>
+                        <td>유리</td>
+                    </tr>
+                    <tr>
+                        <td>863사 9710</td>
+                        <td>101</td>
+                        <td>1726</td>
+                        <td>선미</td>
+                    </tr>
+                    <tr>
+                        <td>83타 7373</td>
+                        <td>104</td>
+                        <td>1390</td>
+                        <td>채영</td>
+                    </tr>
+                    <tr>
+                        <td>35하 4530</td>
+                        <td>102</td>
+                        <td>1549</td>
+                        <td>리사</td>
+                    </tr>
+                    <tr>
+                        <td>608바 7812</td>
+                        <td>102</td>
+                        <td>1536</td>
+                        <td>쇼미</td>
+                    </tr>
+                    <tr>
+                        <td>597바 9897</td>
+                        <td>103</td>
+                        <td>1211</td>
+                        <td>민니</td>
+                    </tr>
+                    <tr>
+                        <td>59가 6544</td>
+                        <td>103</td>
+                        <td>1229</td>
+                        <td>소연</td>
+                    </tr>
+                    <tr>
+                        <td>29나 5671</td>
+                        <td>105</td>
+                        <td>1509</td>
+                        <td>세정</td>
+                    </tr>
+                    <tr>
+                        <td>17가 6931</td>
+                        <td>102</td>
+                        <td>1336</td>
+                        <td>유나</td>
+                    </tr>
+                    <tr>
+                        <td>19마 9438</td>
+                        <td>101</td>
+                        <td>1216</td>
+                        <td>미연</td>
+                    </tr>
+                    <tr>
+                        <td>84라 4481</td>
+                        <td>101</td>
+                        <td>1683</td>
+                        <td>예리</td>
+                    </tr>
+                    <tr>
+                        <td>649나 6022</td>
+                        <td>101</td>
+                        <td>1362</td>
+                        <td>미나</td>
+                    </tr>
+                    <tr>
+                        <td>279라 9732</td>
+                        <td>102</td>
+                        <td>1526</td>
+                        <td>정연</td>
+                    </tr>
+                    <tr>
+                        <td>748차 8968</td>
+                        <td>101</td>
+                        <td>1267</td>
+                        <td>지효</td>
+                    </tr>
+                    <tr>
+                        <td>10자 7069</td>
+                        <td>102</td>
+                        <td>1331</td>
+                        <td>모모</td>
+                    </tr>
+                    <tr>
+                        <td>654마 2998</td>
+                        <td>104</td>
+                        <td>1264</td>
+                        <td>채령</td>
+                    </tr>
+                    <tr>
+                        <td>236가 6710</td>
+                        <td>105</td>
+                        <td>1456</td>
+                        <td>리아</td>
+                    </tr>
+                    <tr>
+                        <td>55하 4304</td>
+                        <td>104</td>
+                        <td>1247</td>
+                        <td>예지</td>
+                    </tr>
+                    <tr>
+                        <td>612바 8737</td>
+                        <td>104</td>
+                        <td>1324</td>
+                        <td>류진</td>
+                    </tr>
+                    <tr>
+                        <td>605가 4659</td>
+                        <td>101</td>
+                        <td>1324</td>
+                        <td>이동윤</td>
+                    </tr>
+                    <tr>
+                        <td>82바 9659</td>
+                        <td>103</td>
+                        <td>1410</td>
+                        <td>마대성</td>
+                    </tr>
+                    <tr>
+                        <td>41마 8374</td>
+                        <td>101</td>
+                        <td>1378</td>
+                        <td>설이태</td>
+                    </tr>
+                    <tr>
+                        <td>409파 2085</td>
+                        <td>102</td>
+                        <td>1529</td>
+                        <td>김경백</td>
+                    </tr>
+                    <tr>
+                        <td>66아 8993</td>
+                        <td>102</td>
+                        <td>1754</td>
+                        <td>김남곤</td>
+                    </tr>
+                    <tr>
+                        <td>726바 4639</td>
+                        <td>104</td>
+                        <td>1732</td>
+                        <td>노연주</td>
+                    </tr>
+                    <tr>
+                        <td>32가 5170</td>
+                        <td>103</td>
+                        <td>1689</td>
+                        <td>윤효순</td>
+                    </tr>
+                    <tr>
+                        <td>292마 6222</td>
+                        <td>104</td>
+                        <td>1093</td>
+                        <td>손흥민</td>
+                    </tr>
+                </table>
+            </div>
+        </section>
+
+        <!-- Bootstrap core JS-->
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
+        <!-- Core theme JS-->
+        <script src="/js/scripts.js"></script>
+        <script src="https://cdn.startbootstrap.com/sb-forms-latest.js"></script>
+    </body>
+</html>
