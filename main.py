@@ -12,6 +12,7 @@ app.mount("/static", StaticFiles(directory="static"))
 app.mount("/images", StaticFiles(directory="images"))
 app.include_router(upload_router)
 
+'''test'''
 
 @app.get("/")
 async def main(request:Request):
